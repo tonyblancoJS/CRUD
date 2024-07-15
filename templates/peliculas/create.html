@@ -1,0 +1,32 @@
+{% include 'header.html' %} 
+
+{% with messages= get_flashed_messages() %} 
+    {% if messages %} 
+        <div class="alert alert-danger" role="alert"> 
+            {% for message in messages %} 
+                {{message}} 
+            {% endfor %} 
+        </div> 
+    {% endif %}
+{% endwith %}
+    <br>
+    <h1>DB Películas</h1>
+    <br>
+    <hr>
+    <br>
+    <form method="post" action="/store" enctype="multipart/form-data">
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombre" ><br><br>
+        <label for="director">Director</label>
+        <input type="text" id="director" name="director" ><br><br>
+        <label for="imagen">Imagen</label>
+        <input type="file" id="imagen" name="imagen" ><br><br> <!--cambie type="text" por type="file"-->
+        <div class="botones">
+            <button type="submit" class="agregar-button">Agregar</button>
+            <button type="reset" class="reset-button">Restablecer</button>
+            <a href="/" class="home-button">Home</a>
+        </div>
+        <br><hr>
+    </form>
+    
+{% include 'footer.html' %}

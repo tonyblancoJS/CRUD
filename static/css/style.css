@@ -1,0 +1,197 @@
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(129, 129, 248);
+}
+h1{
+    margin: 0 10px 0 10px;
+}
+a{
+    text-decoration: none;
+    color:black;
+}    
+
+.home-button, .agregar-button, .reset-button{
+  display: inline-block;
+  margin-left: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  background-color: #007BFF;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.home-button:hover {
+  background-color: #0056b3;
+  color:white;
+}
+
+.carga-button{
+    display: inline-block;
+    margin-left: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.carga-button:hover {
+    color: whitesmoke;
+    background-color: #0056b3;
+}
+.container-edit-del{
+  display: flex;
+  flex-wrap: wrap;
+}
+.editar-button{
+  width: auto;
+  margin-right: 15px;
+  padding: 7px 10px;
+  color:black;
+  text-decoration: none;
+  background-color: #007BFF;
+  border-radius: 5px;
+}
+.editar-button:hover{
+  color: aliceblue;
+  background-color: rgb(81, 223, 97);
+}
+.borrar-button{
+  width: auto;
+  margin-right: 5px;
+  padding: 7px 10px;
+  color:black;
+  text-decoration: none;
+  background-color: #007BFF;
+  border-radius: 5px;
+}
+.borrar-button:hover{
+  color: aliceblue;
+  background-color: rgb(247, 89, 89);
+}
+
+td{
+  align-content:  center;
+}
+
+/*lo que esta abajo era el <style> que tenia en header.html*/
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(129, 129, 248);
+}
+.edit-container{
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+}
+
+.home-button, .agregar-button, .reset-button{
+      display: inline-block;
+      margin-left: 10px;
+      padding: 10px 20px;
+      font-size: 16px;
+      text-align: center;
+      text-decoration: none;
+      color: white;
+      background-color: #007BFF;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+  }
+  .home-button:hover {
+      background-color: #0056b3;
+      
+  }
+  .agregar-button:hover {
+      background-color: #5ace40;
+  } 
+  .reset-button:hover {
+      background-color: #e72a24;
+  }
+h1{
+    margin: 0 10px 0 10px;
+    }
+label{
+    font-size: large;
+    margin: 0 10px 0 10px;
+}
+form input{
+    margin-left: 10px;
+    width: 400px;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+}
+.botones{
+    margin-left: 100px;
+}
+.carga-button{
+    display: inline-block;
+    margin-left: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.carga-button:hover {
+    color: whitesmoke;
+    background-color: #0056b3;
+}
+.container-edit-del{
+  display: flex;
+  flex-wrap: wrap;
+}
+.editar-button{
+  width: auto;
+  margin-right: 15px;
+  padding: 7px 10px;
+  background-color: #007BFF;
+  border-radius: 5px;
+}
+.editar-button:hover{
+  color: aliceblue;
+  background-color: rgb(81, 223, 97);
+}
+.borrar-button{
+  width: auto;
+  margin-right: 5px;
+  padding: 7px 10px;
+  background-color: #007BFF;
+  border-radius: 5px;
+}
+.borrar-button:hover{
+  color: aliceblue;
+  background-color: rgb(247, 89, 89);
+}
+a{
+  text-decoration: none;
+  color:black;
+}
+td{
+  align-content:  center;
+}
+.footer-container{
+  margin: 0px 110px 0px;
+}

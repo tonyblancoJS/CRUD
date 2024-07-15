@@ -1,0 +1,41 @@
+{% include 'header.html' %}
+
+    <br>
+    <h1>CRUD PELICULAS</h1>
+    <hr>
+    <a href="/create" class="carga-button">Carga en DB Películas</a>
+    <br>
+    <hr>
+    <table class="table table-striped">
+      <thead class="thead-light">
+        <tr>
+          <th>ID</th>
+          <th>Foto</th>
+          <th>Nombre</th>
+          <th>Director</th>
+          <th>Acciones</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for pelicula in peliculas %}
+        <tr>
+          <td>{{pelicula[0]}}</td>
+          <td><img class="img-thumbnail" width="100" src="uploads/{{pelicula[3]}}" alt="imagen pelicula"></td>
+          <td>{{pelicula[1]}}</td>
+          <td>{{pelicula[2]}}</td>
+          <td>
+            <div class="container-edit-del">
+              <div >
+                <a href="/edit/{{pelicula[0]}}" class="editar-button">Editar </a>
+              </div>
+              <div >
+                <a href="/destroy/{{pelicula[0]}}" id="botonBorrar" class="borrar-button">Borrar</a>
+              </div>
+            </div>
+          </td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+
+{% include 'footer.html' %}

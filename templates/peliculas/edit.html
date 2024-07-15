@@ -1,0 +1,51 @@
+{% include 'header.html' %}
+    
+    <br>
+    {% for pelicula in peliculas %}
+    <form method="post" action="/update" enctype="multipart/form-data">
+      <div class="edit-container">
+        <div>
+          <label for="id"hidden>ID</label>
+          <input type="text"  id="id" name="id"value="{{pelicula[0]}}" hidden><br><br>
+          <label for="nombre">Nombre</label>
+          <input type="text" id="nombre" name="nombre" value="{{pelicula[1]}}"><br><br>
+          <label for="director">Director</label>
+          <input type="text" id="director" name="director" value="{{pelicula[2]}}"><br><br>
+          <label for="imagen">Imagen</label>
+          <input type="file" id="imagen" name="imagen" value="{{pelicula[3]}}"><br><br>
+        </div>
+        <div class="edit-container-image">
+          <img class="img-thumbnail" width="300" src="{{url_for('uploads', nombreFoto=pelicula[3])}}" alt="imagen pelicula">
+        </div>
+      </div>
+        <div class="botones">
+            <button type="submit" class="agregar-button">Guardar</button>
+            <a href="/" class="home-button">Home</a>
+        </div>
+        <br><hr>
+    </form>
+   
+    {% endfor %}
+    <br>
+    <table class="table table-striped">
+        <thead class="thead-light">
+          <tr>
+            <th>ID</th>
+            <th>Foto</th>
+            <th>Nombre</th>
+            <th>Director</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for pelicula in peliculas %}
+          <tr>
+            <td>{{pelicula[0]}}</td>
+            <td>{{pelicula[3]}}</td>
+            <td>{{pelicula[1]}}</td>
+            <td>{{pelicula[2]}}</td>
+            </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+
+{% include 'footer.html' %}
